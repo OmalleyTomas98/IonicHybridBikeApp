@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+      <h4  align="center">
+          {{pageName}}
+          
+      </h4>
+      <h4  align="center">
+          {{name}}
+      </h4>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+    <h4>
+                Welcome :  {{yourName}} to the Ionic InfoBike !
+    </h4>
+      <ion-img src="https://png2.kisspng.com/sh/9bd666a9235c763b59177f044463f3b3/L0KzQYm3UsE5N5p0fZH0aYP2gLBuTgJia5pzf59raXP8c73sTfN6a51uhtk2Y3zsgH7okwQuappokdV1aX7qPbTzigBieqV4RadqOEnlcbS9VvZnPJU4RqgEOEa5SIW9UcUyQGo8TagDNkS4SIe1kP5o/kisspng-racing-bicycle-cycling-clip-art-bicycling-cliparts-5a89bac66ff4d3.6986684615189756864586.png"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>Let's Get Started</ion-card-subtitle>
+        
+        <ion-card-title>Welcome to my Ionic Bike App</ion-card-title>
+        Enter Name: <input [(ngModel)]="yourName"/>
+        <ion-button color="success">Success</ion-button>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-label>
+      
+        </ion-label>
+        <p>
+          Please use the three butttons foundunderneath to naviagte through the application
+        </p>
+        <ul>
+          <li>  Learn -(Current page: Break) </li>
+          <li>  Buid  -(Build your own bike to your own preference)  </li>
+          <li>  Security -(Using API check reports of stolen bikes and Track where you are )</li>
+        </ul>
+
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Recommended Stores to Build with </ion-label>
+      </ion-list-header>
+      <ion-item href="https://www.merlincycles.com/?source=PHG">
+        <ion-icon slot="start" color="medium" name="bicycle"></ion-icon>
+        <ion-label>Merlincycles </ion-label>
+      </ion-item>
+      <ion-item href="https://www.chainreactioncycles.com/road?awc=5623_1556310791_9cef7a47c5a2571348e63f4928695df3&utm_source=affiliate-window&utm_medium=affiliates&utm_campaign=http%253A%252F%252Fintheknowcycling.com&utm_term=In%2BThe%2BKnow%2BCycling&utm_content=Editorial%2BContent">
+        <ion-icon slot="start" color="medium" name="bicycle"></ion-icon>
+        <ion-label>Chain reaction cycles </ion-label>
+      </ion-item>
+      <ion-item href="https://www.tredz.co.uk/?source=aw&awc=6821_1556310830_ac2942b300e2178c4792ea1e1a7d936a&utm_source=aw&utm_medium=205175">
+        <ion-icon slot="start" color="medium" name="bicycle"></ion-icon>
+        <ion-label>Tredz </ion-label>
+      </ion-item>
+      <ion-item href="https://www.bikeexchange.ie/s/vintage-bikes">
+        <ion-icon slot="start" color="medium" name="bicycle"></ion-icon>
+        <ion-label>Bike Exchange</ion-label>
+      </ion-item>
+    
+      <ion-card class="welcome-card">
+        <ul>
+            <p>
+                The aim of this appliaction is to make people more aware of bicycles by:
+                <p>
+                    1.Informing where you can buy.
+                </p>
+
+                <p>
+                    2.The components used to build a bicycle.
+                </p>
+
+                <p>
+                    3.Use google maps to track your journey.
+                </p>
+        </ul>
+
+        
+        </ion-card>
+    </ion-list>
+</ion-content>

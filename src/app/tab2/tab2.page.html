@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+      <h4  align="center">
+          {{yourname}}
+      </h4>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-card class="welcome-card">
+        <ion-img src="http://chittagongit.com/images/build-icon-png/build-icon-png-6.jpg"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle> Let's Get Started</ion-card-subtitle>
+        <ion-card-title>Welcome to  Let's Build </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Underneath you will find all the parts needed to build your first bike</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+          <ion-card class="welcome-card">
+          <ion-card-title>
+            Bike Parts
+          </ion-card-title>
+        <ul>
+            <li *ngFor="let bike of bikes">
+              <p>{{bike.Choice}}</p>
+              <p>{{bike.Brand}}</p>
+              <p>{{bike.FrameSet}}</p>
+              <p>{{bike.FrameSize}}</p>
+              <p>{{bike.FrameMaterial}}</p>
+              <p>{{bike.Colour }}</p>
+              <p>{{bike.Groupset}}</p>
+              <p>{{bike.Crank}}</p>
+              <p>{{bike.chainrings}}</p>
+              <p>{{bike.cassette }}</p>
+              <p>{{bike.rearSprockets}}</p>
+              <p>{{bike.chain}}</p>
+              <p>{{bike.frontDerailleurs}}</p>
+              <p>{{bike.rearDerailleurs}}</p>
+              <p>{{bike.brake}}</p>
+              <p>{{bike.gearLevers}}</p>
+              <p>{{bike.cabling}}</p>
+              <p>{{bike.WheelSet}}</p>
+              <p>{{bike.rimMaterial}}</p>
+              <p>{{bike.tyreWidths}}</p>
+              <p>{{bike.FinishingKit}}</p>
+              <p>{{bike.Handlebars}}</p>
+              <p>{{bike.Stem}}</p>
+              <p>{{bike.BarTape}}</p>
+              <p>{{bike.Seatpost}}</p>
+              <p>{{bike.Saddle}}</p>
+              <p>{{bike.Pedals}}</p>
+            </li>
+          </ul>
+        </ion-card>
+      </ion-list-header>
+    </ion-list>
+</ion-content>

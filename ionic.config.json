@@ -1,0 +1,7 @@
+{
+  "name": "myInfoBikeApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
